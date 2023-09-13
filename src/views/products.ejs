@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventry_Mgmt</title>
+  <link rel="stylesheet" href="products.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="Inventry_Mgmt">
+  <div class="navbar">
+    <h4 style="color: whitesmoke;"><b style="padding-left: 9px;margin-top: 12px;display: inline-block;">Inventry
+        Management App : &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp By
+        BhabaniShankar</b></h4>
+  </div>
+  <div class="table-responsive">
+    <table class="table align-middle">
+      <thead>
+        <tr class="tr0">
+          <th>Id</th>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th style="padding-left: 110px;">Author</th>
+          <th class="th-img" style="padding-left: 80px; ">Image</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% products.forEach(product=>{ %>
+          <tr class="tr1">
+            <th>
+              <%= product.id %>
+            </th>
+            <td>
+              <%= product.name %>
+            </td>
+            <td>
+              <%=product.desc %>
+            </td>
+            <td>
+              <%= product.price %>
+            </td>
+            <td style="padding-left:112px;">
+              <%= product.author %>
+            </td>
+            <td class="_imgUrl"> <img src="<%=product._imgUrl %> " alt=""> </td>
+          </tr>
+          <% }) %>
+<!-- 
+             <tr class="tr2">
+          <th>2.</th>
+          <td>The Lord Of The Rings.</td>
+          <td>Literary reception of The Lord.</td>
+          <td>299</td>
+          <td style="padding-left: 100px;">John Ronald Reuel Tolkien.</td>
+          <td><img src="The lord of the rings.png" alt=""></td>
+        </tr>
+        <tr class="tr3">
+          <th>3.</th>
+          <td>The Handmaid's Tale.</td>
+          <td>Fturistic dystopian novel.</td>
+          <td>399</td>
+          <td style="padding-left: 100px;">Margaret Atwood.</td>
+          <td ><img src="The Handmaids Tale.png" alt="" style="height:276px "></td>
+        </tr>
+        <tr class="tr4">
+          <th>4.</th>
+          <td>The Handmaids Tale.</td>
+          <td>Novel.</td>
+          <td>499</td>
+          <td style="padding-left: 100px;">Harper Lee.</td>
+          <td><img src="Harper Le.png" alt="" style="height:276px "></td>
+        </tr>
+        <tr class="tr5">
+          <th>5.</th>
+          <td>Little Women.</td>
+          <td>coming-of-age novel.</td>
+          <td>599</td>
+          <td style="padding-left: 100px;">Louisa May Alcott.</td>
+          <td><img src="Louisa May Alcott.png" alt="" style="height:276px "></td>
+        </tr>
+        <tr class="tr6">
+          <th>6.</th>
+          <td>Things Fall Apart.</td>
+          <td> Debut novel.</td>
+          <td>699</td>
+          <td style="padding-left: 100px;">Chinua Achebe.</td>
+          <td>
+            <img src="Chinua Achebe.png" alt="" style="height:276px ">
+          </td>
+        </tr>
+        <tr class="tr7">
+          <th>7.</th>
+          <td>Don Quixote.</td>
+          <td>FSpanish epic novel.</td>
+          <td>799</td>
+          <td style="padding-left: 100px;">Miguel de Cervantes.</td>
+          <td><img src="Miguel de Cervantes.png" alt="" style="height:267px "></td>
+        </tr>
+        <tr class="tr8">
+          <th>8.</th>
+          <td>War and Peace.</td>
+          <td>Napoleonic Wars.</td>
+          <td>899</td>
+          <td style="padding-left: 100px;">Leo Tolstoy.</td>
+          <td><img src="Leo Tolstoy.png" alt="" style="height:276px"></td>
+        </tr>
+        <tr class="tr9">
+          <th>9.</th>
+          <td>Catch-22.</td>
+          <td>satirical war novel.</td>
+          <td>999</td>
+          <td style="padding-left: 100px;">Joseph Heller.</td>
+          <td><img src="Joseph Heller.png" alt="" style="height:276px"></td>
+        </tr>
+        <tr class="tr10">
+          <th>10.</th>
+          <td>Slaughterhouse Five.</td>
+          <td>The Childrens Crusade.</td>
+          <td>1099</td>
+          <td style="padding-left: 100px;">JKurt Vonnegut.</td>
+          <td><img src="Kurt Vonnegut.png" alt=""></td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
