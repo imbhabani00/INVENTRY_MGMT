@@ -1,0 +1,18 @@
+{
+  "name": "inventry_mgmt",
+  "version": "1.0.0",
+  "description": "Inventry App",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BhabaniShankar Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
+  }
+}
