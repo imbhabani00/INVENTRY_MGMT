@@ -1,0 +1,30 @@
+.Inventry_Mgmt {
+    background-color: black;
+}
+
+.table-responsive {
+    margin: 4px;
+    padding: 4px;
+}
+
+.Inventry_Mgmt {
+    margin: 5px;
+    padding: 5px;
+}
+
+._imgUrl {
+    padding-left: 80px;
+    height: 270px;
+    width: 250px;
+}
+
+.tr0 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* table raw text */
+.tr1 {
+    font-style: italic;
+    font-size: 15px;
+}
